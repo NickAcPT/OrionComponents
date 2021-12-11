@@ -1,0 +1,65 @@
+/* Import Roboto font from Google fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+:root {
+    --button-main-color: rgba(0, 0, 0, 40%);
+    --button-outer-color: rgba(0, 0, 0, 35%);
+    --button-inner-color: rgba(255, 255, 255, 25%);
+
+    --button-hover-color: rgba(0, 0, 0, 50%);
+    --button-hover-outer-color: rgba(0, 0, 0, 35%);
+    --button-hover-inner-color: rgba(255, 255, 255, 45%);
+
+    --button-pressed-color: rgba(0, 0, 0, 60%);
+    --button-pressed-outer-color: rgba(0, 0, 0, 45%);
+    --button-pressed-inner-color: rgba(255, 255, 255, 55%);
+}
+
+.component-container > .button {
+    width: 60px;
+    height: 60px;
+}
+
+.button {
+    background: var(--button-main-color);
+    width: 150px;
+    height: 30px;
+    box-shadow: 0 0 0 1px var(--button-inner-color),
+    0 0 0 2px var(--button-outer-color);
+    border-radius: 4px;
+}
+
+.button:hover {
+    --button-main-color: var(--button-hover-color);
+    --button-inner-color: var(--button-hover-inner-color);
+    --button-outer-color: var(--button-hover-outer-color);
+}
+
+.button:active {
+    --button-main-color: var(--button-pressed-color);
+    --button-inner-color: var(--button-pressed-inner-color);
+    --button-outer-color: var(--button-pressed-outer-color);
+}
+
+.button-hovered {
+    --button-main-color: var(--button-hover-color);
+    --button-inner-color: var(--button-hover-inner-color);
+    --button-outer-color: var(--button-hover-outer-color);
+}
+
+.button-pressed {
+    --button-main-color: var(--button-pressed-color);
+    --button-inner-color: var(--button-pressed-inner-color);
+    --button-outer-color: var(--button-pressed-outer-color);
+}
+
+#button-save {
+    display: flex;
+    font-family: "Roboto Light", serif;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+}

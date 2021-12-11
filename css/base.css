@@ -1,0 +1,18 @@
+body, html {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    /* Center all contents in page */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightgray;
+}
+
+.component-container {
+    padding: 4px;
+}
